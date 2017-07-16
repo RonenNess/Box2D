@@ -1,0 +1,40 @@
+# Prerequisites
+*.d
+*/x86/Debug/*
+*/x86/Release/*
+*/x64/Debug/*
+*/x64/Release/*
+/**/Debug/*
+/**/Release/*
+.vs/*
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+BonnieEngine/*/*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+BonnieEngine/*/*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+x64/Debug/BonnieEngine.pdb
