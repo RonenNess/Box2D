@@ -21,6 +21,7 @@
 #define B2_DISTANCE_H
 
 #include "Box2D/Common/b2Math.h"
+namespace Box2D {
 
 class b2Shape;
 
@@ -136,6 +137,7 @@ inline const b2Vec2& b2DistanceProxy::GetSupportVertex(const b2Vec2& d) const
 	}
 
 	return m_vertices[bestIndex];
+}
 }
 
 #endif

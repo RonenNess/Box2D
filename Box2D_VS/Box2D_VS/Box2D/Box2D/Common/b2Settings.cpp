@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
+namespace Box2D {
 
 b2Version b2_version = {2, 3, 2};
 
@@ -41,4 +42,6 @@ void b2Log(const char* string, ...)
 	va_start(args, string);
 	vprintf(string, args);
 	va_end(args);
+}
+
 }

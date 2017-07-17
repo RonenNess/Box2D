@@ -20,6 +20,7 @@
 #define B2_MOUSE_JOINT_H
 
 #include "Box2D/Dynamics/Joints/b2Joint.h"
+namespace Box2D {
 
 /// Mouse joint definition. This requires a world target point,
 /// tuning parameters, and the time step.
@@ -125,5 +126,6 @@ protected:
 	b2Mat22 m_mass;
 	b2Vec2 m_C;
 };
+}
 
 #endif

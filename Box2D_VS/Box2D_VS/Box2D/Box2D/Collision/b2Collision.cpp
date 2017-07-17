@@ -18,6 +18,7 @@
 
 #include "Box2D/Collision/b2Collision.h"
 #include "Box2D/Collision/b2Distance.h"
+namespace Box2D {
 
 void b2WorldManifold::Initialize(const b2Manifold* manifold,
 						  const b2Transform& xfA, float32 radiusA,
@@ -249,4 +250,6 @@ bool b2TestOverlap(	const b2Shape* shapeA, int32 indexA,
 	b2Distance(&output, &cache, &input);
 
 	return output.distance < 10.0f * b2_epsilon;
+}
+
 }

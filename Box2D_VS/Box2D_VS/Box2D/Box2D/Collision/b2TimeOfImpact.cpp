@@ -24,6 +24,7 @@
 #include "Box2D/Common/b2Timer.h"
 
 #include <stdio.h>
+namespace Box2D {
 
 float32 b2_toiTime, b2_toiMaxTime;
 int32 b2_toiCalls, b2_toiIters, b2_toiMaxIters;
@@ -483,4 +484,6 @@ void b2TimeOfImpact(b2TOIOutput* output, const b2TOIInput* input)
 	float32 time = timer.GetMilliseconds();
 	b2_toiMaxTime = b2Max(b2_toiMaxTime, time);
 	b2_toiTime += time;
+}
+
 }

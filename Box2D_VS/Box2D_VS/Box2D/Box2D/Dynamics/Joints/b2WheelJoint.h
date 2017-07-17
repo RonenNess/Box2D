@@ -20,6 +20,7 @@
 #define B2_WHEEL_JOINT_H
 
 #include "Box2D/Dynamics/Joints/b2Joint.h"
+namespace Box2D {
 
 /// Wheel joint definition. This requires defining a line of
 /// motion using an axis and an anchor point. The definition uses local
@@ -211,6 +212,7 @@ inline void b2WheelJoint::SetSpringDampingRatio(float32 ratio)
 inline float32 b2WheelJoint::GetSpringDampingRatio() const
 {
 	return m_dampingRatio;
+}
 }
 
 #endif

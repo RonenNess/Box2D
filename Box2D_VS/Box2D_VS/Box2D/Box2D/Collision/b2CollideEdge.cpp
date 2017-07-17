@@ -20,6 +20,7 @@
 #include "Box2D/Collision/Shapes/b2CircleShape.h"
 #include "Box2D/Collision/Shapes/b2EdgeShape.h"
 #include "Box2D/Collision/Shapes/b2PolygonShape.h"
+namespace Box2D {
 
 
 // Compute contact points for edge versus circle.
@@ -695,4 +696,6 @@ void b2CollideEdgeAndPolygon(	b2Manifold* manifold,
 {
 	b2EPCollider collider;
 	collider.Collide(manifold, edgeA, xfA, polygonB, xfB);
+}
+
 }

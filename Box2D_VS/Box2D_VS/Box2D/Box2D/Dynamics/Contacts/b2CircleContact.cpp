@@ -24,6 +24,7 @@
 #include "Box2D/Collision/b2TimeOfImpact.h"
 
 #include <new>
+namespace Box2D {
 
 b2Contact* b2CircleContact::Create(b2Fixture* fixtureA, int32, b2Fixture* fixtureB, int32, b2BlockAllocator* allocator)
 {
@@ -49,4 +50,6 @@ void b2CircleContact::Evaluate(b2Manifold* manifold, const b2Transform& xfA, con
 	b2CollideCircles(manifold,
 					(b2CircleShape*)m_fixtureA->GetShape(), xfA,
 					(b2CircleShape*)m_fixtureB->GetShape(), xfB);
+}
+
 }

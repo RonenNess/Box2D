@@ -20,6 +20,7 @@
 #define B2_POLYGON_SHAPE_H
 
 #include "Box2D/Collision/Shapes/b2Shape.h"
+namespace Box2D {
 
 /// A convex polygon. It is assumed that the interior of the polygon is to
 /// the left of each edge.
@@ -84,6 +85,7 @@ inline b2PolygonShape::b2PolygonShape()
 	m_radius = b2_polygonRadius;
 	m_count = 0;
 	m_centroid.SetZero();
+}
 }
 
 #endif

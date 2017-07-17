@@ -18,6 +18,7 @@
 
 #include "Box2D/Rope/b2Rope.h"
 #include "Box2D/Common/b2Draw.h"
+namespace Box2D {
 
 b2Rope::b2Rope()
 {
@@ -256,4 +257,6 @@ void b2Rope::Draw(b2Draw* draw) const
 	{
 		draw->DrawSegment(m_ps[i], m_ps[i+1], c);
 	}
+}
+
 }

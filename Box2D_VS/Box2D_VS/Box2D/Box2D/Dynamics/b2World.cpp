@@ -33,6 +33,7 @@
 #include "Box2D/Common/b2Draw.h"
 #include "Box2D/Common/b2Timer.h"
 #include <new>
+namespace Box2D {
 
 b2World::b2World(const b2Vec2& gravity)
 {
@@ -1354,4 +1355,6 @@ void b2World::Dump()
 	b2Log("b2Free(bodies);\n");
 	b2Log("joints = nullptr;\n");
 	b2Log("bodies = nullptr;\n");
+}
+
 }

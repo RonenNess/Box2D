@@ -33,6 +33,7 @@
 #include "Box2D/Common/b2BlockAllocator.h"
 
 #include <new>
+namespace Box2D {
 
 b2Joint* b2Joint::Create(const b2JointDef* def, b2BlockAllocator* allocator)
 {
@@ -208,4 +209,6 @@ b2Joint::b2Joint(const b2JointDef* def)
 bool b2Joint::IsActive() const
 {
 	return m_bodyA->IsActive() && m_bodyB->IsActive();
+}
+
 }

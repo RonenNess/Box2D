@@ -21,6 +21,7 @@
 #include "Box2D/Collision/Shapes/b2EdgeShape.h"
 #include "Box2D/Collision/Shapes/b2ChainShape.h"
 #include "Box2D/Collision/Shapes/b2PolygonShape.h"
+namespace Box2D {
 
 // GJK using Voronoi regions (Christer Ericson) and Barycentric coordinates.
 int32 b2_gjkCalls, b2_gjkIters, b2_gjkMaxIters;
@@ -586,4 +587,6 @@ void b2Distance(b2DistanceOutput* output,
 			output->distance = 0.0f;
 		}
 	}
+}
+
 }

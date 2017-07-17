@@ -18,6 +18,7 @@
 
 #include "Box2D/Collision/Shapes/b2PolygonShape.h"
 #include <new>
+namespace Box2D {
 
 b2Shape* b2PolygonShape::Clone(b2BlockAllocator* allocator) const
 {
@@ -465,4 +466,6 @@ bool b2PolygonShape::Validate() const
 	}
 
 	return true;
+}
+
 }

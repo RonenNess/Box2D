@@ -19,6 +19,7 @@
 #include "Box2D/Collision/b2Collision.h"
 #include "Box2D/Collision/Shapes/b2CircleShape.h"
 #include "Box2D/Collision/Shapes/b2PolygonShape.h"
+namespace Box2D {
 
 void b2CollideCircles(
 	b2Manifold* manifold,
@@ -151,4 +152,6 @@ void b2CollidePolygonAndCircle(
 		manifold->points[0].localPoint = circleB->m_p;
 		manifold->points[0].id.key = 0;
 	}
+}
+
 }

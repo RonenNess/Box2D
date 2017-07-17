@@ -26,6 +26,7 @@
 #include "Box2D/Collision/b2BroadPhase.h"
 #include "Box2D/Collision/b2Collision.h"
 #include "Box2D/Common/b2BlockAllocator.h"
+namespace Box2D {
 
 b2Fixture::b2Fixture()
 {
@@ -300,4 +301,6 @@ void b2Fixture::Dump(int32 bodyIndex)
 	b2Log("    fd.shape = &shape;\n");
 	b2Log("\n");
 	b2Log("    bodies[%d]->CreateFixture(&fd);\n", bodyIndex);
+}
+
 }

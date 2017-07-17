@@ -20,6 +20,7 @@
 #define B2_CIRCLE_SHAPE_H
 
 #include "Box2D/Collision/Shapes/b2Shape.h"
+namespace Box2D {
 
 /// A circle shape.
 class b2CircleShape : public b2Shape
@@ -55,6 +56,7 @@ inline b2CircleShape::b2CircleShape()
 	m_type = e_circle;
 	m_radius = 0.0f;
 	m_p.SetZero();
+}
 }
 
 #endif

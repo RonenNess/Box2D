@@ -19,6 +19,7 @@
 #include "Box2D/Dynamics/Joints/b2RopeJoint.h"
 #include "Box2D/Dynamics/b2Body.h"
 #include "Box2D/Dynamics/b2TimeStep.h"
+namespace Box2D {
 
 
 // Limit:
@@ -238,4 +239,6 @@ void b2RopeJoint::Dump()
 	b2Log("  jd.localAnchorB.Set(%.15lef, %.15lef);\n", m_localAnchorB.x, m_localAnchorB.y);
 	b2Log("  jd.maxLength = %.15lef;\n", m_maxLength);
 	b2Log("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+}
+
 }

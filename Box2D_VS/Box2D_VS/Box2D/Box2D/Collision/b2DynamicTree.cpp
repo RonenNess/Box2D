@@ -18,6 +18,7 @@
 
 #include "Box2D/Collision/b2DynamicTree.h"
 #include <string.h>
+namespace Box2D {
 
 b2DynamicTree::b2DynamicTree()
 {
@@ -777,4 +778,6 @@ void b2DynamicTree::ShiftOrigin(const b2Vec2& newOrigin)
 		m_nodes[i].aabb.lowerBound -= newOrigin;
 		m_nodes[i].aabb.upperBound -= newOrigin;
 	}
+}
+
 }

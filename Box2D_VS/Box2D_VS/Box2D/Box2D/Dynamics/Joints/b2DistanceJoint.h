@@ -20,6 +20,7 @@
 #define B2_DISTANCE_JOINT_H
 
 #include "Box2D/Dynamics/Joints/b2Joint.h"
+namespace Box2D {
 
 /// Distance joint definition. This requires defining an
 /// anchor point on both bodies and the non-zero length of the
@@ -164,6 +165,7 @@ inline void b2DistanceJoint::SetDampingRatio(float32 ratio)
 inline float32 b2DistanceJoint::GetDampingRatio() const
 {
 	return m_dampingRatio;
+}
 }
 
 #endif

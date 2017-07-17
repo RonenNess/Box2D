@@ -21,6 +21,7 @@
 #include "Box2D/Dynamics/b2Fixture.h"
 
 #include <new>
+namespace Box2D {
 
 b2Contact* b2PolygonAndCircleContact::Create(b2Fixture* fixtureA, int32, b2Fixture* fixtureB, int32, b2BlockAllocator* allocator)
 {
@@ -46,4 +47,6 @@ void b2PolygonAndCircleContact::Evaluate(b2Manifold* manifold, const b2Transform
 	b2CollidePolygonAndCircle(	manifold,
 								(b2PolygonShape*)m_fixtureA->GetShape(), xfA,
 								(b2CircleShape*)m_fixtureB->GetShape(), xfB);
+}
+
 }

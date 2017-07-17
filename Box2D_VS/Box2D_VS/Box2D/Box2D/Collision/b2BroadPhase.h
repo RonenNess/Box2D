@@ -23,6 +23,7 @@
 #include "Box2D/Collision/b2Collision.h"
 #include "Box2D/Collision/b2DynamicTree.h"
 #include <algorithm>
+namespace Box2D {
 
 struct b2Pair
 {
@@ -252,6 +253,7 @@ inline void b2BroadPhase::RayCast(T* callback, const b2RayCastInput& input) cons
 inline void b2BroadPhase::ShiftOrigin(const b2Vec2& newOrigin)
 {
 	m_tree.ShiftOrigin(newOrigin);
+}
 }
 
 #endif

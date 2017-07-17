@@ -19,6 +19,7 @@
 #include "Box2D/Dynamics/Joints/b2WeldJoint.h"
 #include "Box2D/Dynamics/b2Body.h"
 #include "Box2D/Dynamics/b2TimeStep.h"
+namespace Box2D {
 
 // Point-to-point constraint
 // C = p2 - p1
@@ -341,4 +342,6 @@ void b2WeldJoint::Dump()
 	b2Log("  jd.frequencyHz = %.15lef;\n", m_frequencyHz);
 	b2Log("  jd.dampingRatio = %.15lef;\n", m_dampingRatio);
 	b2Log("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+}
+
 }

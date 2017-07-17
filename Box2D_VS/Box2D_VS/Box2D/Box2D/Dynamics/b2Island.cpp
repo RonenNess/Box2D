@@ -26,6 +26,7 @@
 #include "Box2D/Dynamics/Joints/b2Joint.h"
 #include "Box2D/Common/b2StackAllocator.h"
 #include "Box2D/Common/b2Timer.h"
+namespace Box2D {
 
 /*
 Position Correction Notes
@@ -536,4 +537,6 @@ void b2Island::Report(const b2ContactVelocityConstraint* constraints)
 
 		m_listener->PostSolve(c, &impulse);
 	}
+}
+
 }

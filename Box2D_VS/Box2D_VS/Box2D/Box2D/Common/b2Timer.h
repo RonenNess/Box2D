@@ -20,6 +20,7 @@
 #define B2_TIMER_H
 
 #include "Box2D/Common/b2Settings.h"
+namespace Box2D {
 
 /// Timer for profiling. This has platform specific code and may
 /// not work on every platform.
@@ -46,5 +47,6 @@ private:
 	unsigned long m_start_usec;
 #endif
 };
+}
 
 #endif

@@ -23,6 +23,7 @@
 #include "Box2D/Dynamics/b2Fixture.h"
 #include "Box2D/Dynamics/b2World.h"
 #include "Box2D/Common/b2StackAllocator.h"
+namespace Box2D {
 
 // Solver debugging is normally disabled because the block solver sometimes has to deal with a poorly conditioned effective mass matrix.
 #define B2_DEBUG_SOLVER 0
@@ -835,4 +836,6 @@ bool b2ContactSolver::SolveTOIPositionConstraints(int32 toiIndexA, int32 toiInde
 	// We can't expect minSpeparation >= -b2_linearSlop because we don't
 	// push the separation above -b2_linearSlop.
 	return minSeparation >= -1.5f * b2_linearSlop;
+}
+
 }

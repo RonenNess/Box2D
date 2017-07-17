@@ -19,6 +19,7 @@
 #include "Box2D/Dynamics/Joints/b2DistanceJoint.h"
 #include "Box2D/Dynamics/b2Body.h"
 #include "Box2D/Dynamics/b2TimeStep.h"
+namespace Box2D {
 
 // 1-D constrained system
 // m (v2 - v1) = lambda
@@ -257,4 +258,6 @@ void b2DistanceJoint::Dump()
 	b2Log("  jd.frequencyHz = %.15lef;\n", m_frequencyHz);
 	b2Log("  jd.dampingRatio = %.15lef;\n", m_dampingRatio);
 	b2Log("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+}
+
 }

@@ -23,6 +23,7 @@
 #include "Box2D/Collision/Shapes/b2EdgeShape.h"
 
 #include <new>
+namespace Box2D {
 
 b2Contact* b2ChainAndCircleContact::Create(b2Fixture* fixtureA, int32 indexA, b2Fixture* fixtureB, int32 indexB, b2BlockAllocator* allocator)
 {
@@ -50,4 +51,6 @@ void b2ChainAndCircleContact::Evaluate(b2Manifold* manifold, const b2Transform& 
 	chain->GetChildEdge(&edge, m_indexA);
 	b2CollideEdgeAndCircle(	manifold, &edge, xfA,
 							(b2CircleShape*)m_fixtureB->GetShape(), xfB);
+}
+
 }

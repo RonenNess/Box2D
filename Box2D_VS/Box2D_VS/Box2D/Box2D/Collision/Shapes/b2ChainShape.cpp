@@ -20,6 +20,7 @@
 #include "Box2D/Collision/Shapes/b2EdgeShape.h"
 #include <new>
 #include <string.h>
+namespace Box2D {
 
 b2ChainShape::~b2ChainShape()
 {
@@ -195,4 +196,6 @@ void b2ChainShape::ComputeMass(b2MassData* massData, float32 density) const
 	massData->mass = 0.0f;
 	massData->center.SetZero();
 	massData->I = 0.0f;
+}
+
 }

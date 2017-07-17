@@ -21,6 +21,7 @@
 #include "Box2D/Dynamics/Joints/b2PrismaticJoint.h"
 #include "Box2D/Dynamics/b2Body.h"
 #include "Box2D/Dynamics/b2TimeStep.h"
+namespace Box2D {
 
 // Gear Joint:
 // C0 = (coordinate1 + ratio * coordinate2)_initial
@@ -416,4 +417,6 @@ void b2GearJoint::Dump()
 	b2Log("  jd.joint2 = joints[%d];\n", index2);
 	b2Log("  jd.ratio = %.15lef;\n", m_ratio);
 	b2Log("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+}
+
 }

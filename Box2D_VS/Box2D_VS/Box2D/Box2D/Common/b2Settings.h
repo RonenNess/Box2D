@@ -22,6 +22,7 @@
 #include <stddef.h>
 #include <assert.h>
 #include <float.h>
+namespace Box2D {
 
 #if !defined(NDEBUG)
 	#define b2DEBUG
@@ -151,5 +152,6 @@ struct b2Version
 
 /// Current version.
 extern b2Version b2_version;
+}
 
 #endif

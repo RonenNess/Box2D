@@ -20,6 +20,7 @@
 #define B2_CHAIN_SHAPE_H
 
 #include "Box2D/Collision/Shapes/b2Shape.h"
+namespace Box2D {
 
 class b2EdgeShape;
 
@@ -100,6 +101,7 @@ inline b2ChainShape::b2ChainShape()
 	m_count = 0;
 	m_hasPrevVertex = false;
 	m_hasNextVertex = false;
+}
 }
 
 #endif

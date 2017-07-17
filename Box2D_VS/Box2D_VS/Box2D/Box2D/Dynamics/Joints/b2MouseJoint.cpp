@@ -19,6 +19,7 @@
 #include "Box2D/Dynamics/Joints/b2MouseJoint.h"
 #include "Box2D/Dynamics/b2Body.h"
 #include "Box2D/Dynamics/b2TimeStep.h"
+namespace Box2D {
 
 // p = attached point, m = mouse point
 // C = p - m
@@ -219,4 +220,6 @@ float32 b2MouseJoint::GetReactionTorque(float32 inv_dt) const
 void b2MouseJoint::ShiftOrigin(const b2Vec2& newOrigin)
 {
 	m_targetA -= newOrigin;
+}
+
 }

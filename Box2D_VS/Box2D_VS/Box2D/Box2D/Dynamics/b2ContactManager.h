@@ -20,6 +20,7 @@
 #define B2_CONTACT_MANAGER_H
 
 #include "Box2D/Collision/b2BroadPhase.h"
+namespace Box2D {
 
 class b2Contact;
 class b2ContactFilter;
@@ -48,5 +49,6 @@ public:
 	b2ContactListener* m_contactListener;
 	b2BlockAllocator* m_allocator;
 };
+}
 
 #endif

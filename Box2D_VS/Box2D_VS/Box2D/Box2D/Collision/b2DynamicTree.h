@@ -21,6 +21,7 @@
 
 #include "Box2D/Collision/b2Collision.h"
 #include "Box2D/Common/b2GrowableStack.h"
+namespace Box2D {
 
 #define b2_nullNode (-1)
 
@@ -284,6 +285,7 @@ inline void b2DynamicTree::RayCast(T* callback, const b2RayCastInput& input) con
 			stack.Push(node->child2);
 		}
 	}
+}
 }
 
 #endif

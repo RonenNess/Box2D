@@ -22,6 +22,7 @@
 #include "Box2D/Common/b2Math.h"
 #include "Box2D/Collision/Shapes/b2Shape.h"
 #include <memory>
+namespace Box2D {
 
 class b2Fixture;
 class b2Joint;
@@ -877,6 +878,7 @@ inline b2World* b2Body::GetWorld()
 inline const b2World* b2Body::GetWorld() const
 {
 	return m_world;
+}
 }
 
 #endif

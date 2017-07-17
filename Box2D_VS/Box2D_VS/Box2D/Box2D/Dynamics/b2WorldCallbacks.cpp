@@ -18,6 +18,7 @@
 
 #include "Box2D/Dynamics/b2WorldCallbacks.h"
 #include "Box2D/Dynamics/b2Fixture.h"
+namespace Box2D {
 
 // Return true if contact calculations should be performed between these two shapes.
 // If you implement your own collision filter you may want to build from this implementation.
@@ -33,4 +34,6 @@ bool b2ContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB)
 
 	bool collide = (filterA.maskBits & filterB.categoryBits) != 0 && (filterA.categoryBits & filterB.maskBits) != 0;
 	return collide;
+}
+
 }

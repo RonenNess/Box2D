@@ -19,6 +19,7 @@
 #include "Box2D/Dynamics/Joints/b2RevoluteJoint.h"
 #include "Box2D/Dynamics/b2Body.h"
 #include "Box2D/Dynamics/b2TimeStep.h"
+namespace Box2D {
 
 // Point-to-point constraint
 // C = p2 - p1
@@ -508,4 +509,6 @@ void b2RevoluteJoint::Dump()
 	b2Log("  jd.motorSpeed = %.15lef;\n", m_motorSpeed);
 	b2Log("  jd.maxMotorTorque = %.15lef;\n", m_maxMotorTorque);
 	b2Log("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+}
+
 }

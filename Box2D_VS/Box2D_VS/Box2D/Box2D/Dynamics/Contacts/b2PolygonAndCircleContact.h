@@ -20,6 +20,7 @@
 #define B2_POLYGON_AND_CIRCLE_CONTACT_H
 
 #include "Box2D/Dynamics/Contacts/b2Contact.h"
+namespace Box2D {
 
 class b2BlockAllocator;
 
@@ -34,5 +35,6 @@ public:
 
 	void Evaluate(b2Manifold* manifold, const b2Transform& xfA, const b2Transform& xfB) override;
 };
+}
 
 #endif

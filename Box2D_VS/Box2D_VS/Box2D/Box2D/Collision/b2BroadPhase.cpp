@@ -17,6 +17,7 @@
 */
 
 #include "Box2D/Collision/b2BroadPhase.h"
+namespace Box2D {
 
 b2BroadPhase::b2BroadPhase()
 {
@@ -116,4 +117,6 @@ bool b2BroadPhase::QueryCallback(int32 proxyId)
 	++m_pairCount;
 
 	return true;
+}
+
 }

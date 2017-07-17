@@ -20,6 +20,7 @@
 #define B2_TIME_STEP_H
 
 #include "Box2D/Common/b2Math.h"
+namespace Box2D {
 
 /// Profiling data. Times are in milliseconds.
 struct b2Profile
@@ -66,5 +67,6 @@ struct b2SolverData
 	b2Position* positions;
 	b2Velocity* velocities;
 };
+}
 
 #endif

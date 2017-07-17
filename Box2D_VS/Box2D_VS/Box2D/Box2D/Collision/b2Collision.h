@@ -21,6 +21,7 @@
 
 #include "Box2D/Common/b2Math.h"
 #include <limits.h>
+namespace Box2D {
 
 /// @file
 /// Structures and functions used for computing contact points, distance
@@ -272,6 +273,7 @@ inline bool b2TestOverlap(const b2AABB& a, const b2AABB& b)
 		return false;
 
 	return true;
+}
 }
 
 #endif

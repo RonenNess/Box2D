@@ -18,6 +18,7 @@
 
 #include "Box2D/Collision/b2Collision.h"
 #include "Box2D/Collision/Shapes/b2PolygonShape.h"
+namespace Box2D {
 
 // Find the max separation between poly1 and poly2 using edge normals from poly1.
 static float32 b2FindMaxSeparation(int32* edgeIndex,
@@ -236,4 +237,6 @@ void b2CollidePolygons(b2Manifold* manifold,
 	}
 
 	manifold->pointCount = pointCount;
+}
+
 }

@@ -24,6 +24,7 @@
 #include "Box2D/Dynamics/b2WorldCallbacks.h"
 
 #include <new>
+namespace Box2D {
 
 b2Contact* b2PolygonContact::Create(b2Fixture* fixtureA, int32, b2Fixture* fixtureB, int32, b2BlockAllocator* allocator)
 {
@@ -49,4 +50,6 @@ void b2PolygonContact::Evaluate(b2Manifold* manifold, const b2Transform& xfA, co
 	b2CollidePolygons(	manifold,
 						(b2PolygonShape*)m_fixtureA->GetShape(), xfA,
 						(b2PolygonShape*)m_fixtureB->GetShape(), xfB);
+}
+
 }

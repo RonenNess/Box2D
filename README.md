@@ -1,5 +1,11 @@
 ![Box2D Logo](http://box2d.org/images/icon.gif)
 
+# ABOUT THIS FORK
+
+This fork of Box2D contains a Visual Studio 2017 project files to build Box2D as a static lib + a script to wrap everything under Box2D namespace.
+
+The output of this repo is a ready-to-use Box2D binaries with a proper namespace.
+
 # Box2D 
 
 **Box2D is a 2D physics engine for games.**

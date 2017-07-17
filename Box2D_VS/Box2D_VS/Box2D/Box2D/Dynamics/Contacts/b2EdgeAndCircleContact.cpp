@@ -21,6 +21,7 @@
 #include "Box2D/Dynamics/b2Fixture.h"
 
 #include <new>
+namespace Box2D {
 
 b2Contact* b2EdgeAndCircleContact::Create(b2Fixture* fixtureA, int32, b2Fixture* fixtureB, int32, b2BlockAllocator* allocator)
 {
@@ -46,4 +47,6 @@ void b2EdgeAndCircleContact::Evaluate(b2Manifold* manifold, const b2Transform& x
 	b2CollideEdgeAndCircle(	manifold,
 								(b2EdgeShape*)m_fixtureA->GetShape(), xfA,
 								(b2CircleShape*)m_fixtureB->GetShape(), xfB);
+}
+
 }

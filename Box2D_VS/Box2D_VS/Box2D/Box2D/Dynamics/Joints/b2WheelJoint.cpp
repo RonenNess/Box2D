@@ -19,6 +19,7 @@
 #include "Box2D/Dynamics/Joints/b2WheelJoint.h"
 #include "Box2D/Dynamics/b2Body.h"
 #include "Box2D/Dynamics/b2TimeStep.h"
+namespace Box2D {
 
 // Linear constraint (point-to-line)
 // d = pB - pA = xB + rB - xA - rA
@@ -453,4 +454,6 @@ void b2WheelJoint::Dump()
 	b2Log("  jd.frequencyHz = %.15lef;\n", m_frequencyHz);
 	b2Log("  jd.dampingRatio = %.15lef;\n", m_dampingRatio);
 	b2Log("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+}
+
 }
